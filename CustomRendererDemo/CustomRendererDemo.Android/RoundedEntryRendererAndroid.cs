@@ -4,10 +4,10 @@ using Android.Graphics.Drawables;
 using CustomRendererDemo;
 using CustomRendererDemo.Droid;
 
-[assembly: ExportRenderer(typeof(RoundedEntry), typeof(RoundedEntryRenderer))]
+[assembly: ExportRenderer(typeof(RoundedEntry), typeof(RoundedEntryRendererAndroid))]
 namespace CustomRendererDemo.Droid
 {
-    public class RoundedEntryRenderer : EntryRenderer
+    public class RoundedEntryRendererAndroid : EntryRenderer
     {
 
         protected override void OnElementChanged(ElementChangedEventArgs<Entry> e)
@@ -17,9 +17,9 @@ namespace CustomRendererDemo.Droid
             if (e.OldElement == null)
             {
                 var gradientDrawable = new GradientDrawable();
-                gradientDrawable.SetColor(e.NewElement.BackgroundColor.ToAndroid());
-                gradientDrawable.SetStroke(5, Android.Graphics.Color.DeepPink);
                 gradientDrawable.SetCornerRadius(60f);
+                gradientDrawable.SetStroke(5, Android.Graphics.Color.DeepPink);
+                gradientDrawable.SetColor(Android.Graphics.Color.LightGray);
                 Control.SetBackground(gradientDrawable);
                 
                 Control.SetPadding(50, Control.PaddingTop, Control.PaddingRight, Control.PaddingBottom);
