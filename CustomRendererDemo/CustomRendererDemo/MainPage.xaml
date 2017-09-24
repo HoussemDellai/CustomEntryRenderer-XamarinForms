@@ -23,9 +23,7 @@
                FontSize="30"/>
 
         <local:RoundedEntry Text="Custom Entry"
-                            FontSize="30"
-                            BackgroundColor="LightGray"/>
+                            FontSize="30" />
 
     </StackLayout>
-
 </ContentPage>
