@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CustomRendererDemo"
+             x:Class="CustomRendererDemo.MainPage">
+
+    <StackLayout Spacing="40"
+                 Padding="20">
+
+        <Label Text="Xamarin Forms"
+               TextColor="DodgerBlue"
+               FontSize="44"/>
+
+        <Label Text="Custom Renderer"
+               TextColor="DeepPink"
+               FontSize="40"/>
+
+        <!--<Button Text="Rounded Button" 
+                BorderRadius="20"
+                FontSize="30"/>-->
+
+        <Entry Text="Default Entry"
+               FontSize="30"/>
+
+        <local:RoundedEntry Text="Custom Entry"
+                            FontSize="30"
+                            BackgroundColor="LightGray"/>
+
+    </StackLayout>
+
+</ContentPage>
