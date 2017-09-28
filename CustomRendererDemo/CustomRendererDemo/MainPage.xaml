@@ -4,21 +4,12 @@
              xmlns:local="clr-namespace:CustomRendererDemo"
              x:Class="CustomRendererDemo.MainPage">
 
-    <StackLayout Spacing="40"
-                 Padding="20">
+    <StackLayout Padding="20" Spacing="40">
 
-        <Label Text="Xamarin Forms"
-               TextColor="DodgerBlue"
-               FontSize="44"/>
+        <Label Text="Xamarin Forms" TextColor="DodgerBlue" FontSize="44"/>
 
-        <Label Text="Custom Renderer"
-               TextColor="DeepPink"
-               FontSize="40"/>
-
-        <!--<Button Text="Rounded Button" 
-                BorderRadius="20"
-                FontSize="30"/>-->
-
+        <Label Text="Custom Renderer" TextColor="DeepPink" FontSize="40"/>
+        
         <Entry Text="Default Entry"
                FontSize="30"/>
 
